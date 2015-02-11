@@ -1,0 +1,19 @@
+.navbar-inverse{
+    background-image:linear-gradient(#0c095c 0%, #0bafd6 100%);
+    color: white;
+    font-size: 18px;
+}
+
+.navbar{
+    //background-image:linear-gradient(#a9b3d9 0%, #838CB0 100%);
+    //background-color: silver;
+    //color: black;
+    font-size: 18px;
+}
+
+.my-navbar li:hover{
+    background-image: radial-gradient(#9eafef 0%, #051676 100%);
+    //background-color: darkblue;
+    //background-image: radial-gradient(#11af1f 0%, #051616 100%);
+    
+}

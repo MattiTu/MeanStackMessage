@@ -1,0 +1,166 @@
+.main{
+    margin-top: 10px;
+/*    padding: 70px; */
+    padding: 10px;
+//    background-image: linear-gradient(#46effa 100%, #d3f2f4 0%);
+    background-color: #d3f2f4;
+}
+
+html{
+//    background-image: linear-gradient(#d3f2f4 0%, #46effa 100%);
+    background-color: #d3f2f4;
+}
+
+.error{
+    color: red;
+}
+
+.new_form{
+    padding: 30px;
+}
+
+.btn{
+    
+    margin-bottom: 10px;
+}
+
+.jumbotron{
+    max-width: 700px;
+
+}
+
+.ng-scope{
+    background-color: #d3f2f4;    
+}
+
+.post_repeat.ng-enter, .post_repeat.ng-move {
+  -webkit-transition:0.5s linear all;
+  -moz-transition:0.5s linear all;
+  -o-transition:0.5s linear all;
+  transition:0.5s linear all;
+  opacity:0;
+}
+
+.col-md-4{
+/*    margin: 0;
+    padding: 0;
+*/
+}
+
+/*
+.panel-heading{
+    background-color: green;
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+}
+
+.panel-body{
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+}
+*/
+
+.my_panel{
+    margin: 0px;
+    padding: 0px;
+    padding-left: 10px;
+    padding-right: 20px;
+    max-width: 600px;
+    te
+}
+
+.my_inline{
+/*    display: inline;*/
+}
+
+.my_panel_heading{
+    font-size: 16px;
+}
+
+.my_panel_body{
+    font-size: 12px;
+}
+
+.message_text{
+    margin: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.message_time{
+    margin-left: 5px;
+    font-size: 11px;
+    text-align: right;
+}
+
+
+.my_max_width{
+    max-width: 600px;
+}
+/*
+span{
+    font-size: 11px;
+}
+*/
+
+X#time1{
+    margin: 0;
+    padding: 0;
+}
+
+#sender1{
+/*    display: inline;*/
+    padding: 0;
+}
+
+/*.row{
+    padding: 1px;
+}
+*/
+.collapse{
+    margin: 0;
+    padding: 1px;    
+}
+
+/*
+ The ng-enter-active and ng-move-active
+ are where the transition destination properties
+ are set so that the animation knows what to
+ animate.
+*/
+.post_repeat.ng-enter.ng-enter-active,
+.post_repeat.ng-move.ng-move-active {
+  opacity:1;
+}
+
+.post_repeat.ng-leave {
+  -webkit-animation:0.5s my_animation;
+  -moz-animation:0.5s my_animation;
+  -o-animation:0.5s my_animation;
+  animation:0.5s my_animation;
+}
+
+@keyframes my_animation {
+  from { opacity:1; }
+  to { opacity:0; }
+}
+
+@-webkit-keyframes my_animation {
+  from { opacity:1; }
+  to { opacity:0; }
+}
+
+@-moz-keyframes my_animation {
+  from { opacity:1; }
+  to { opacity:0; }
+}
+
+@-o-keyframes my_animation {
+  from { opacity:1; }
+  to { opacity:0; }
+}
+

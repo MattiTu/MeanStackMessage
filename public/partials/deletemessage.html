@@ -1,0 +1,42 @@
+<div class="main">
+    <div ng-include src="'/partials/navibar.html'"></div>
+    <div class='container-fluid'>
+        <div class='row'>
+            <div class='col-md-6'>
+                <div class="page-header">
+                  <h3>Select Deleted Messages</h3>
+                </div>
+                <div class='post_repeat' ng-repeat='message in delete.messages'>
+                    <input type="checkbox" class='delete_checkbox' ng-model="delete.messages[$index].delete_check">
+                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#{{$index}}">Topic:{{message.subject}}</button>
+                <button type="button" class="btn btn-default" ng-click='delete.confirmDelete(message._id)'>Delete</button>
+                   <div id="{{$index}}" class="collapse">
+                        <div class="panel panel-default my_max_width">
+
+                            <div class="panel-heading my_panel my_panel_heading">
+                                <div class="panel-title">
+                                    <div class='container-fluid'> 
+                                        <div class="row">
+                                            <div class='col-md-10 message_text'>
+                                                Sender: {{message.user}}
+                                            </div> 
+                                            <div class='col-md-1 message_text message_time'>
+                                                <span>{{message.timestamp | date:"dd.MM.yyyy  HH:mm"}}
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel-body my_panel my_panel_body">
+                                <p>{{message.text}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-default" ng-click='delete.deleteAllSelected()'>Delete Selected</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,7 +1,8 @@
 var mongoose = require('mongoose');
 var bcrypt = require('bcrypt-nodejs');
 
-mongoose.connect('mongodb://localhost/mean_stack',function(err,success){
+//mongoose.connect('mongodb://localhost/mean_stack',function(err,success){
+mongoose.connect('mongodb://$OPENSHIFT_MONGODB_DB_HOST:$OPENSHIFT_MONGODB_DB_PORT/',function(err,success){
     
     if(err){
         console.log(err + " check that your mongodb is running.");
